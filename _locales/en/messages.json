@@ -1,0 +1,6 @@
+{
+    "ExtensionDescription": {
+        "message": "Enhances Blocket.se with new functions like showing the description of an ad directly on the search page without the need to click on it.",
+        "description": "The general description of the extention that's displayed in the Chrome Web Store for instance."
+    }
+}

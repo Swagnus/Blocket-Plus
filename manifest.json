@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Blocket Plus",
+    "description": "__MSG_ExtensionDescription__",
+    "version": "1.0",
+    "default_locale": "en",
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "src/extension.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/ad-descriptions/injector.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["src/ad-descriptions/ad-descriptions.js"],
+        "matches": ["<all_urls>"]
+    }]
+}
